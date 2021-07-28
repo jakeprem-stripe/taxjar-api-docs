@@ -227,6 +227,15 @@ Additionally, we provide specific 400 error messages for invalid data:
 
 - Invalid ZIP and state combinations for `to_zip`, `to_state` and `from_zip`, `from_state`
 
+There are additional scenarios in which `/v2/taxes` may return a 400 error code:
+
+- No `amount` or `line_items[]` are provided
+- Non-unique `line_items[][id]`'s
+- Missing `to_zip` when `to_country` is `"US"`
+- Missing `to_state` when `to_country` is `"US"` or `"CA"`
+- `to_zip` isn't a valid postal code code when `to_country` is `"US"`
+- Unsupported country codes
+
 ### Transactions
 
 When using the `/v2/transactions` endpoints, we return the following error messages:
@@ -247,6 +256,12 @@ Make sure you have an active API token with TaxJar by [reviewing your account](h
 This error occurs most often when posting form-encoded data with parameters such as `nexus_addresses[]` or `line_items[]`. If your code looks correct, try submitting the request with a `Content-Type: application/json` header. **Data should always be JSON-encoded.**
 
 Additionally, a 406 response will be returned if you provide blank values for required fields when pushing orders or refunds through the `/v2/transactions` endpoints.
+
+Additional 406 error response reasons:
+
+- State or country is not a valid two-letter ISO code
+- Shipping or another required field is missing
+- Shipping or another field has an invalid value using an unintended type (e.g., Alphanumeric string instead of a decimal)
 
 ## 422 Unprocessable Entity
 
