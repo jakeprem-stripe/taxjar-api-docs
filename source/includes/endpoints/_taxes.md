@@ -4947,7 +4947,7 @@ POST https://api.taxjar.com/v2/taxes
 
 Parameter | Type | Required | Description
 --------- | ------- | ------- | -----------
-from_country | string | optional | Two-letter ISO country code of the country where the order shipped from. <span class="usage-note" data-tooltip="Either an address on file, `nexus_addresses` parameter, or `from_` parameters are required to perform tax calculations." data-tooltip-position="top center">View Note</span>
+from_country | string | optional | Two-letter ISO country code of the country where the order shipped from. <span class="usage-note" data-tooltip="Either an address on file, `nexus_addresses` parameter, or `from_` parameters are required to perform tax calculations. Providing `nexus_addresses` in API calls will override TaxJar Account 'State Settings' configurations." data-tooltip-position="top center">View Note</span>
 from_zip | string | optional | Postal code where the order shipped from (5-Digit ZIP or ZIP+4).
 from_state | string | optional | Two-letter ISO state code where the order shipped from.
 from_city | string | optional | City where the order shipped from.
@@ -4961,7 +4961,7 @@ amount | float | optional | Total amount of the order, **excluding shipping**. <
 shipping | float | required | Total amount of shipping for the order.
 customer_id | string | optional | Unique identifier of the given customer for exemptions.
 exemption_type | string | optional | Type of exemption for the order: `wholesale`, `government`, `marketplace`, `other`, or `non_exempt`.  <span class="usage-note" data-tooltip="An `exemption_type` of `wholesale`, `government`, or `other` will result in an order being determined fully exempt. A value of `marketplace` or `non_exempt will return calculated tax amounts in the response, regardless of any potential customer exemption (determined via `customer_id`)." data-tooltip-position="top center">View Note</span>
-nexus_addresses[][id] | string | optional | Unique identifier of the given nexus address. <span class="usage-note" data-tooltip="Either an address on file, `nexus_addresses` parameter, or `from_` parameters are required to perform tax calculations." data-tooltip-position="top center">View Note</span>
+nexus_addresses[][id] | string | optional | Unique identifier of the given nexus address. <span class="usage-note" data-tooltip="Either an address on file, `nexus_addresses` parameter, or `from_` parameters are required to perform tax calculations. Providing `nexus_addresses` in API calls will override TaxJar Account 'State Settings' configurations." data-tooltip-position="top center">View Note</span>
 nexus_addresses[][country] | string | <span class="conditional" data-tooltip="If providing `nexus_addresses`, country is required." data-tooltip-position="top center">conditional</span> | Two-letter ISO country code for the nexus address.
 nexus_addresses[][zip] | string | optional | Postal code for the nexus address.
 nexus_addresses[][state] | string | <span class="conditional" data-tooltip="If providing `nexus_addresses`, state is required." data-tooltip-position="top center">conditional</span> | Two-letter ISO state code for the nexus address.
@@ -4981,7 +4981,7 @@ line_items[][discount] | float | optional | Total discount (non-unit) for the it
 
 - *The `to_state` parameter is required when `to_country` is 'US' or 'CA'.*
 
-- *Either an address on file, `nexus_addresses` parameter, or `from_` parameters are required to perform tax calculations.*
+- *Either an address on file, `nexus_addresses` parameter, or `from_` parameters are required to perform tax calculations. Providing `nexus_addresses` in API calls will override TaxJar Account 'State Settings' configurations.*
 
 #### Response
 
