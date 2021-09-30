@@ -223,7 +223,7 @@ $ curl https://api.taxjar.com/v2/categories \
     {
       "name": "Food & Groceries",
       "product_tax_code": "40030",
-      "description": "Food for humans consumption, unprepared"
+      "description": "Food for human consumption, unprepared"
     },
     {
       "name": "Soft Drinks",
