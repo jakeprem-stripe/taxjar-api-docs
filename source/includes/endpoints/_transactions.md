@@ -976,7 +976,7 @@ line_items[][id] | string | optional | Unique identifier of the given line item.
 line_items[][quantity] | integer | optional | Quantity for the item.
 line_items[][product_identifier] | string | optional | Product identifier for the item.
 line_items[][description] | string | optional | Description of the line item (up to 255 characters).
-line_items[][product_tax_code] | string | optional | Product tax code for the item. If omitted, the item will remain fully taxable.
+line_items[][product_tax_code] | string | optional | Product tax code for the item. If omitted, the item will remain fully taxable. <span class="usage-note" data-tooltip-position="top center" data-tooltip="In API version 2022-01-24, invalid product tax codes will result in a 400 error">View Note</span>
 line_items[][unit_price] | float | optional | Unit price for the item in dollars.
 line_items[][discount] | float | optional | Total discount (non-unit) for the item in dollars.
 line_items[][sales_tax] | float | <span class="conditional" data-tooltip="If providing `line_items`, `sales_tax` is required." data-tooltip-position="top center">conditional</span> | Total sales tax collected (non-unit) for the item in dollars.
@@ -1441,7 +1441,7 @@ line_items[][id] | string | optional | Unique identifier of the given line item.
 line_items[][quantity] | integer | optional | Quantity for the item.
 line_items[][product_identifier] | string | optional | Product identifier for the item.
 line_items[][description] | string | optional | Description of the line item (up to 255 characters).
-line_items[][product_tax_code] | string | optional | Product tax code for the item. If omitted, the item will remain fully taxable.
+line_items[][product_tax_code] | string | optional | Product tax code for the item. If omitted, the item will remain fully taxable. <span class="usage-note" data-tooltip-position="top center" data-tooltip="In API version 2022-01-24, invalid product tax codes will result in a 400 error">View Note</span>
 line_items[][unit_price] | float | optional | Unit price for the item in dollars.
 line_items[][discount] | float | optional | Total discount (non-unit) for the item in dollars.
 line_items[][sales_tax] | float | optional | Total sales tax collected (non-unit) for the item in dollars.
@@ -2730,7 +2730,7 @@ line_items[][id] | string | optional | Unique identifier of the given line item.
 line_items[][quantity] | integer | optional | Quantity for the item.
 line_items[][product_identifier] | string | optional | Product identifier for the item.
 line_items[][description] | string | optional | Description of the line item (up to 255 characters).
-line_items[][product_tax_code] | string | optional | Product tax code for the item. If omitted, the item will remain fully taxable.
+line_items[][product_tax_code] | string | optional | Product tax code for the item. If omitted, the item will remain fully taxable. <span class="usage-note" data-tooltip-position="top center" data-tooltip="In API version 2022-01-24, invalid product tax codes will result in a 400 error">View Note</span>
 line_items[][unit_price] | float | optional | Unit price for the item in dollars.
 line_items[][discount] | float | optional | Total discount (non-unit) for the item in dollars.
 line_items[][sales_tax] | float | <span class="conditional" data-tooltip="If providing `line_items`, `sales_tax` is required." data-tooltip-position="top center">conditional</span> | Total sales tax collected (non-unit) for the item in dollars.
@@ -3196,7 +3196,7 @@ line_items[][id] | string | optional | Unique identifier of the given line item.
 line_items[][quantity] | integer | optional | Quantity for the item.
 line_items[][product_identifier] | string | optional | Product identifier for the item.
 line_items[][description] | string | optional | Description of the line item (up to 255 characters).
-line_items[][product_tax_code] | string | optional | Product tax code for the item. If omitted, the item will remain fully taxable.
+line_items[][product_tax_code] | string | optional | Product tax code for the item. If omitted, the item will remain fully taxable. <span class="usage-note" data-tooltip-position="top center" data-tooltip="In API version 2022-01-24, invalid product tax codes will result in a 400 error">View Note</span>
 line_items[][unit_price] | float | optional | Unit price for the item in dollars.
 line_items[][discount] | float | optional | Total discount (non-unit) for the item in dollars.
 line_items[][sales_tax] | float | optional | Total sales tax collected (non-unit) for the item in dollars.
