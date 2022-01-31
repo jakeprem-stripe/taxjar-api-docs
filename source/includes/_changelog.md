@@ -8,8 +8,8 @@ Stay on top of new developer-facing features, accuracy improvements, and bug fix
 
 * <span class="badge badge--post">Feature</span> TaxJar API version "2022-01-24"
   introduced. Provides increased validations on order and refund transaction
-  POST and PUT requests. Product Tax Codes (PTCs) that do not exist will not
-  return a 400 error listing the PTCs that are invalid.
+  POST and PUT requests. Product Tax Codes (PTCs) that do not exist will return
+  a 400 error listing the PTCs that are invalid.
 
 ### January 2021
 
