@@ -2,6 +2,15 @@
 
 Stay on top of new developer-facing features, accuracy improvements, and bug fixes for our sales tax API. Have a request? Encounter an issue? [We'd love to hear your feedback.](mailto:support@taxjar.com)
 
+### January 2022
+
+#### 2022-01-24
+
+* <span class="badge badge--post">Feature</span> TaxJar API version "2022-01-24"
+  introduced. Provides increased validations on order and refund transaction
+  POST and PUT requests. Product Tax Codes (PTCs) that do not exist will return
+  a 400 error listing the PTCs that are invalid.
+
 ### January 2021
 
 #### 2021-01-21

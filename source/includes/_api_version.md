@@ -99,9 +99,11 @@ TaxJar has introduced API versioning to deliver enhanced validations and feature
 #### Current API versions
 * '2012-01-01'
 * '2020-08-07'
+* '2022-01-24'
 
 For more details, see the [API Changelog](https://developers.taxjar.com/api/reference/#changelog).
 
 <aside class="notice">
+Effective February 3, 2022, all new TaxJar accounts will default to version '2022-01-24'.<br>
 Effective July 1, 2021, all new TaxJar accounts will default to version '2020-08-07'.
 </aside>
