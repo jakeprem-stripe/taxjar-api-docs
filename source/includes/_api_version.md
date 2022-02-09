@@ -7,7 +7,7 @@ require "taxjar"
 client = Taxjar::Client.new(api_key: "9e0cd62a22f451701f29c3bde214")
 
 client.set_api_config('headers', {
-  'x-api-version' => '2020-08-07'
+  'x-api-version' => '2022-01-24'
 })
 ```
 
@@ -16,7 +16,7 @@ import taxjar
 client = taxjar.Client(api_key='9e0cd62a22f451701f29c3bde214')
 
 client.set_api_config('headers', {
-  'x-api-version': '2020-08-07'
+  'x-api-version': '2022-01-24'
 })
 ```
 
@@ -28,7 +28,7 @@ const client = new Taxjar({
 });
 
 client.setApiConfig('headers', {
-  'x-api-version': '2020-08-07'
+  'x-api-version': '2022-01-24'
 });
 ```
 
@@ -37,7 +37,7 @@ require __DIR__ . '/vendor/autoload.php';
 $client = TaxJar\Client::withApiKey("9e0cd62a22f451701f29c3bde214");
 
 $client->setApiConfig('headers', [
-  'x-api-version' => '2020-08-07'
+  'x-api-version' => '2022-01-24'
 ]);
 ```
 
@@ -46,7 +46,7 @@ using Taxjar;
 var client = new TaxjarApi("9e0cd62a22f451701f29c3bde214");
 
 client.setApiConfig("headers", new Dictionary<string, string> {
-  { "x-api-version", "2020-08-07" }
+  { "x-api-version", "2022-01-24" }
 });
 ```
 
@@ -60,11 +60,11 @@ public class ApiVersionExample {
 
     public static void main(String[] args) {
         Map<String, Object> params = new HashMap<>();
-        params.put("x-api-version", "2020-08-07");
+        params.put("x-api-version", "2022-01-24");
 
         Taxjar client = new Taxjar("9e0cd62a22f451701f29c3bde214", params);
 
-        client.setApiConfig("x-api-version", "2020-08-07");
+        client.setApiConfig("x-api-version", "2022-01-24");
     }
 
 }
@@ -81,7 +81,7 @@ func main() {
     })
 
     client.Headers = map[string]interface{}{
-      "x-api-version": "2020-08-07",
+      "x-api-version": "2022-01-24",
     }
 }
 ```
@@ -89,7 +89,7 @@ func main() {
 ```shell
 $ curl "API_ENDPOINT" \
   -H "Authorization: Bearer 9e0cd62a22f451701f29c3bde214" \
-  -H "x-api-version: 2020-08-07"
+  -H "x-api-version: 2022-01-24"
 ```
 
 TaxJar has introduced API versioning to deliver enhanced validations and features. To take advantage of an API version, `'x-api-version'` must be specified in API call request headers.
@@ -105,5 +105,4 @@ For more details, see the [API Changelog](https://developers.taxjar.com/api/refe
 
 <aside class="notice">
 Effective February 3, 2022, all new TaxJar accounts will default to version '2022-01-24'.<br>
-Effective July 1, 2021, all new TaxJar accounts will default to version '2020-08-07'.
 </aside>
